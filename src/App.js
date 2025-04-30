@@ -5,10 +5,14 @@ import Panel from './components/Panel';
 
 function App() {
   return (
-    <div className="bg-black"> {/* Set outermost background to black */}
+    <div className="bg-kpdu-background"> {/* Use custom background color */}
       <Header />
       {/* Adjusted padding and gap for responsiveness */}
       <main className="min-h-screen p-8 md:p-12 lg:p-16"> 
+        {/* Add styled heading */}
+        <h2 className="text-white font-bold text-2xl md:text-3xl text-center mb-10 md:mb-16">
+          Connecting communities through coordinated action.
+        </h2>
         {/* Grid layout with responsive columns and gap */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <Panel 

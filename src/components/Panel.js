@@ -3,16 +3,20 @@ import React from 'react';
 const Panel = ({ title, description }) => {
   return (
     // Use dark gray background, increased padding, rounded corners, enhanced shadow
-    // Add subtle border, green border on hover, scale transform on hover
+    // Updated rounding, shadow. Added icon structure.
     <div 
-      className="bg-gray-900 p-6 md:p-8 rounded-xl shadow-xl border border-gray-700 
+      className="bg-kpdu-card p-6 md:p-8 rounded-2xl shadow-lg border border-kpdu-card 
                  cursor-pointer 
-                 hover:bg-gray-800 hover:shadow-2xl hover:border-green-600 hover:scale-[1.03]
+                 hover:bg-gray-800 hover:shadow-2xl hover:border-kpdu-accent hover:scale-[1.03]
                  transition duration-300 ease-in-out"
     >
-      {/* Adjusted title and description styling */}
-      <h3 className="text-white text-lg md:text-xl font-semibold">{title}</h3>
-      <p className="text-gray-400 mt-2 md:mt-3">{description}</p>
+      {/* Icon and Title structure - Use font-bold */}
+      <div className="flex items-center text-kpdu-text-light text-lg md:text-xl font-bold">
+        <span className="mr-2">[Icon]</span> 
+        <span>{title}</span>
+      </div>
+      {/* Description */}
+      <p className="text-kpdu-text-dark mt-2 md:mt-3">{description}</p>
     </div>
   );
 };
