@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# KPDU Website - Center for Social Action (CSA)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the official landing page for the Kapitbahayan Partnership and Development Unit (KPDU), the coordinating unit for over 30 partner barangays associated with the Center for Social Action (CSA).
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+The website serves as a central hub for community partners to easily access information about CSA programs and services, reducing the need for direct inquiries and streamlining communication.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Modern Landing Page:** A visually appealing interface built with React and styled using Tailwind CSS.
+-   **Informational Panels:** Key clickable sections directing users to important resources:
+    -   Venue Reservations
+    -   Activity Sign-ups
+    -   Announcements
+    -   Other Data/Resources
+-   **Responsive Design:** Adapts to various screen sizes for accessibility on desktops, tablets, and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+-   [React](https://reactjs.org/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Create React App](https://create-react-app.dev/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Setup and Running Locally
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   Node.js and npm (or yarn) installed on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+    *(This will install React, Tailwind CSS, and other necessary packages listed in `package.json`)*
 
-### `npm run eject`
+### Running the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  **Start the application:**
+    ```bash
+    npm start
+    ```
+2.  Open your browser and navigate to `http://localhost:3000` (or the port specified in your console).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will automatically reload if you make changes to the code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*(Make sure to replace placeholder text like `<repository-url>` and `<repository-directory>` if possible, otherwise leave them generic)*.
