@@ -7,13 +7,13 @@ module.exports = {
         sans: ['Inter', 'sans-serif'], // Add Inter font
       },
       colors: {
-        'kpdu-background': '#0a0a0a',
-        'kpdu-card': '#111827',
-        'kpdu-accent': '#176a49',
-        'kpdu-text-light': '#F3F4F6',
-        'kpdu-text-dark': '#9CA3AF',
+      'kpdu-background': '#0b0f12',
+      'kpdu-card': '#111827',
+      'kpdu-accent': '#176a49',
+      'kpdu-text-light': '#ffffff',
+      'kpdu-text-dark': '#9ca3af',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }

@@ -1,17 +1,45 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/csa.jpg';
+
+const navLinks = [
+  { label: 'Home', href: '#' },
+  { label: 'About', href: '#' },
+  { label: 'Contact', href: '#' },
+];
 
 const Header = () => {
   return (
-    // Use dark gray background, use custom accent for bottom border, adjust padding
-    <header className="bg-gray-900 p-4 md:px-8 border-b border-kpdu-accent flex items-center justify-between">
-      <div className="flex items-center">
-        {/* Keep logo size */}
-        <img src={logo} alt="CSA Logo" className="h-12 w-auto mr-4" /> 
-        {/* Adjust title size and change weight to bold */}
-        <h1 className="text-white text-xl md:text-2xl font-bold">KPDU - Center for Social Action</h1>
+    <header className="bg-white px-6 md:px-12 py-8 border-b border-[#02AB60]/30 relative overflow-hidden">
+      <div className="max-w-[1600px] mx-auto flex items-center justify-between">
+
+        {/* Left: Large title with logo after 'x' */}
+        <h1 className="text-[#0A2C40] text-5xl md:text-6xl font-extrabold flex items-center gap-4 tracking-tight leading-none select-none">
+          KPDU&nbsp;
+          <span className="text-[#02AB60] font-black">x</span>
+          <img
+            src={logo}
+            alt="CSA Logo"
+            className="w-20 h-20 object-contain border-4 border-[#02AB60] rounded-md"
+          />
+        </h1>
+
+        {/* Navigation */}
+        <nav>
+          <ul className="flex space-x-12 text-[#0A2C40] font-extrabold text-xl md:text-2xl uppercase tracking-wider">
+            {navLinks.map(({ label, href }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  className="relative pb-2 hover:text-[#02AB60] transition duration-300 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-[#02AB60] after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
       </div>
-      {/* Navigation or other elements can go here */}
     </header>
   );
 };

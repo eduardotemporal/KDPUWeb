@@ -1,38 +1,41 @@
 import React from 'react';
-import './App.css'; // Keep this if you have global styles not handled by Tailwind
+import './App.css';
 import Header from './components/Header';
 import Panel from './components/Panel';
+import VenueSection from './components/VenueSection';
+import ActivitySection from './components/ActivitySection';
+import AnnouncementSection from './components/AnnouncementSection';
+import OtherDataSection from './components/OtherDataSection';
+import Footer from './components/Footer';
+
+
+
+
+
+import {
+  HiOutlineClipboardList,
+  HiOutlineSpeakerphone,
+  HiOutlineDatabase,
+} from 'react-icons/hi';
 
 function App() {
   return (
-    <div className="bg-kpdu-background"> {/* Use custom background color */}
+    <div className="bg-white min-h-screen text-[#0A2C40] font-sans">
       <Header />
-      {/* Adjusted padding and gap for responsiveness */}
-      <main className="min-h-screen p-8 md:p-12 lg:p-16"> 
-        {/* Add styled heading */}
-        <h2 className="text-white font-bold text-2xl md:text-3xl text-center mb-10 md:mb-16">
-          Connecting communities through coordinated action.
-        </h2>
-        {/* Grid layout with responsive columns and gap */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          <Panel 
-            title="Venue Reservations" 
-            description="Book spaces for your community events." 
-          />
-          <Panel 
-            title="Activity Sign-ups" 
-            description="Register for upcoming workshops and activities." 
-          />
-          <Panel 
-            title="Announcements" 
-            description="Stay updated with the latest news from CSA." 
-          />
-          <Panel 
-            title="Other Data" 
-            description="Access resources and important information." 
-          />
-        </div>
+      <main className="px-6 md:px-12 lg:px-24 py-12">
+
+        
+        <VenueSection />
+
+        <ActivitySection />
+
+        <AnnouncementSection />
+
+        <OtherDataSection />
+
+
       </main>
+         <Footer />
     </div>
   );
 }
